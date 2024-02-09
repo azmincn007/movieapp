@@ -1,0 +1,217 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+.mylink {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Section 1 */
+.section1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+
+}
+
+.sec-L {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.contents {
+  width: 700px;
+}
+
+.txt1 {
+  height: 75px;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.txt2 {
+  font-size: 60px;
+  font-weight: 700;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #c4105e 44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  margin-top: 10px;
+  height: 45px;
+  width: 180px;
+  border: 2px solid #6a6a6a;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.play-button {
+  color: #c40e61;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.sec-R {
+  height: 90vh;
+  width: 40%;
+  position: relative;
+}
+
+.b1,
+.b2 {
+  width: 320px; /* Original width */
+  height: 400px; /* Original height */
+  max-width: 32vw; /* Set maximum width as 50% of viewport width */
+  max-height: 40vw; /* Set maximum height as 64% of viewport width */
+  position: absolute;
+  background-position: cover;
+  border-radius: 12px;
+}
+
+.b1 {
+  background: url("../Images/B/1.png");
+  top: 32.75%; /* Adjust the top position for centering vertically */
+  right: 37%; /* Adjust the right position for centering horizontally */
+  z-index: 2;
+}
+
+.b2 {
+  background: url("../Images/B/2.png");
+  top: 12.5%; /* Adjust the top position for centering vertically */
+  right: 15%; /* Adjust the right position for centering horizontally */
+  z-index: 1;
+}
+
+/* Section 2 Main */
+.section2-main {
+  width: 100%;
+}
+
+.trending-bar {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.t {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.fire {
+  color: #c40e61;
+  height: 30px;
+  width: 30px;
+}
+
+.h-line {
+  padding: 0px 10px;
+  border-top: 2px solid #2c294482;
+  width: 85%; /* Adjust width as needed */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.see-more {
+  color: #2c294482;
+  padding: 0px 10px;
+  font-size: 16px;
+}
+
+/* Section 2 */
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 15px 10px;
+  margin-right: 10px;
+}
+
+.title h3,
+.title p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+img {
+  width: 280px;
+  height: 350px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .b1,
+    .b2 {
+      width: 60vw; /* Decrease width for smaller viewport */
+      height: 75vw; /* Decrease height proportionally */
+      max-width: 320px; /* Set maximum width back to original */
+      max-height: 400px; /* Set maximum height back to original */
+    }
+  }.section1 {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .sec-L {
+    width: 100%; /* Take up full width */
+
+    .txt1{
+      display: flex;
+      justify-content: center;
+     
+    }
+    .txt2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0px;
+    }
+    .but{
+      display: flex;
+      justify-content: center;
+    }
+
+    .contents{
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+  }
+
+  .sec-R {
+    width: 100%; /* Take up full width */
+    padding-bottom: 30px;
+    height: 100vh;
+
+  }
+
+  .section2-main{
+    padding-top: 50px;
+  }
+}
+
+
+

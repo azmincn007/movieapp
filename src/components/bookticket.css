@@ -1,0 +1,112 @@
+/* booktickets.css */
+
+.section .main-book {
+  color: black;
+  width: 500px;
+  display: flex; /* Added */
+  justify-content: center; /* Added */
+}
+
+.main-book {
+  
+  display: flex;
+  flex-direction: column; /* Added */
+  border-radius: 8px;
+  align-items: center; /* Added */
+
+
+}
+
+.ticket-det {
+  position: relative;
+}
+
+.seats-caption {
+ 
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.fawindow{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: rgb(248, 68, 100);
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.count-flex {
+  display: flex;
+  padding: 32px 0px;
+  justify-content: center; /* Centered horizontally */
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px; /* Set equal width and height */
+  height: 10px; /* Set equal width and height */
+  padding: 22px;
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.category .contents-cat {
+  padding: 0px 24px;
+}
+
+.button-seats {
+  display: flex;
+  justify-content: center;
+}
+
+.bike-anim {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.bike-anim img {
+  width: 145px;
+  height: 56px;
+}
+
+.button-seats button {
+  color: white;
+  background-color: rgb(248, 68, 100);
+  padding: 15px 150px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.button-seats {
+  padding-bottom: 40px;
+}
+
+.count.active {
+  color: white;
+  background-color: rgb(248, 68, 100);
+  border-radius: 50%;
+}
+
+.cat-type {
+  color: rgb(134, 125, 125);
+}
+
+.cat-rate {
+  font-weight: bold;
+}
+
+.cat-status {
+  color: rgb(56, 168, 56);
+}
