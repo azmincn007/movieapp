@@ -1,0 +1,156 @@
+.fullpage{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoice{
+    width: 50%;
+   
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;    
+
+    
+}
+
+.div1{
+    font-size: 1.3rem;
+background-color: #C40E61;
+color: white;
+padding: 1.4rem 1.7rem;
+}
+
+.div2{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #d3066217;
+    padding: 1.3rem 0rem;
+    
+
+    .div2contents{
+        padding: 1.7rem 1.3rem;
+        width: 25%;
+        border-radius: 1rem;
+        height: 12rem;
+        background-color: white;
+
+        h5{
+            color: #f52080e9;
+            font-size: 1.05rem;
+            padding-bottom: 0.8rem;
+        }
+        p{
+            padding-bottom: .5rem;
+            color: #333333;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+         
+            font-style: normal;
+            
+        }
+    }
+}
+.div3{
+
+    font-family:"Rubik", sans-serif ;
+    padding: 1.8rem 1.5rem;
+
+    h4{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #646464;
+        padding: 1.2rem 0rem;
+    }
+
+    p{
+        color: #646464;
+    }
+    .div3-table{
+        padding-bottom: 2rem;
+
+        #mapmovie{
+            color: #646464;
+        }
+    
+      
+
+        .head{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px;
+            border-bottom: 2px solid #f52080e9;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #646464;
+            
+        }
+
+        .body{
+            padding: 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-top:1rem;
+            background-color: #4197b41e;
+            border-radius: 0.7rem;
+
+            #discount{
+                color:#186D3C;
+                font-weight: bold;
+            }
+
+            #total{
+                font-weight: bold;
+                color: #e51170e3;
+            }
+            
+        }
+    }
+    
+}
+.div4{
+display: flex;
+justify-content: space-between;
+padding: 0rem 1.5rem;
+padding-bottom: 1rem;
+
+.address1{
+    color: #646464;
+    h6{
+        font-weight: bold;
+       
+    }
+}
+
+    .movielogo {
+        color: #c40e61;
+        width: 6rem;
+        height: 6rem;
+      }
+    
+    
+}
+
+.generatepdf{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    
+    
+  
+
+}
+
+.generatepdf .gen{
+    background-color: #FF1881;
+    border: none;
+    width: 22rem;
+    color: white;
+    border-radius: 6px;
+    height: 3rem;
+    
+}
+
+
+

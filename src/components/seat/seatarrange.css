@@ -1,0 +1,170 @@
+
+  
+.seat1{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #FF1881;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    color: #FF1881;
+    font-size: .8rem;
+}
+
+.row1{
+    display: flex;
+    padding: .6rem 0rem;
+}
+
+.main-seat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.column-seat{
+    padding-right:3rem;
+    color: #afaeac;
+    font-weight: 500;
+    font-size: 1.1rem;
+    
+}
+
+.hzline {
+    border-top: 1px solid #E5E1DA; /* Adjust properties as needed */
+    width: 100%; /* Adjust width as needed */
+    padding: .5rem 0rem;
+}
+
+.seat-title{
+    padding: .8rem 0rem;
+    color: #afaeac;
+}
+
+.empty-seat {
+    background-color: transparent; 
+    color: #666;
+    border: none;
+    
+}
+
+.active-seat {
+    color: white;
+    background-color:#FF1881 ;
+  }
+
+  .seat1:hover{
+    color: white;
+    background-color:#FF1881 ;
+  }
+
+
+.seatheadfix {
+    width: 100%;
+    font-family:"Poppins", sans-serif ;
+
+
+    .leftseatbookdata{
+        display: flex;
+        align-items: center;
+        letter-spacing: 2px;
+
+        .leftseatbookdata1{
+            padding-right: 1rem;
+            
+        }
+
+        .backarrow{
+            font-size: 2.4rem;
+            
+        }
+
+        .movietime-data{
+            color: #666;
+            font-weight: 600;
+        }
+    }
+}
+
+.seatbookdata{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    position: relative;
+}
+
+
+.rightseatbookdata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 1.8rem;
+    border: 1px solid #666 ;
+    border-radius: 4px;
+    color:#666 ;
+    font-weight: 600;
+
+}
+
+
+.timings{
+    display: flex;
+    padding: 1rem 1rem;
+
+   button{
+    margin-right: 1rem;
+    width: 9rem;
+    height: 3rem;
+    border:1px solid #FF1881;
+    color: #FF1881;
+    border-radius: 4px;
+    font-weight: 500;
+   
+   }
+}
+
+  
+  
+.timings button.active {
+    background-color: #FF1881; /* Active button background color */
+    color: #ffffff; /* Active button text color */
+  }
+
+
+.newdiv{
+width: 100%;
+height: 4rem;
+box-shadow: -4px -16px 20px -19px rgba(0,0,0,0.45);  
+position: absolute;
+bottom: 0%;  
+display: flex;
+justify-content: center;
+border: none;
+padding: 0.5rem;
+
+        .hee{
+            background-color: #FF1881;
+            border: none;
+            width: 22rem;
+            height: 3rem;
+            border-radius: 6px;
+            color: white;
+
+        }
+
+}
+
+.booked-seat{
+    background-color:#b4b4b895;
+
+    border: none;
+    color: rgba(255, 255, 255, 0.466);
+}

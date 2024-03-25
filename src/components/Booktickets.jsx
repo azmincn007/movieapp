@@ -3,12 +3,16 @@ import React, { useContext, useState } from "react";
 import MV2 from "../Images/MV-M/Untitled design.png";
 import "./bookticket.css";
 import { FaWindowClose } from "react-icons/fa";
-import { modalcontext } from "../App";
+import { modalcontext, moviedatacontext, selectseatcontext } from "../App";
+import { Link, useParams } from "react-router-dom";
 
 
-function Booktickets() {
-  const [activeSeat, setActiveSeat] = useState(1);
+function Booktickets({movie}) {
+  const { index } = useParams();
+  const [activeSeat, setActiveSeat] = useContext(selectseatcontext);
   const [isModalOpen, setIsModalOpen] =useContext(modalcontext)
+  const [moviedatas,setmoviedatas]=useContext(moviedatacontext)
+  // console.log(moviedatas.title);
 
   const handleSeatClick = (activeSeat) => {
     setActiveSeat(activeSeat);
@@ -67,10 +71,13 @@ function Booktickets() {
         </div>
 
         <div className="button-seats">
-          <button>Select seats</button>
+          <Link to={`/${index}/seat`}> <button>Select seats</button>
+          </Link>
+         
         </div>
       </div>
     </section>
+   
   );
 }
 

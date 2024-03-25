@@ -26,7 +26,7 @@
   width: 60%;
 }
 
-.contents {
+.contents1 {
   width: 700px;
 }
 
@@ -45,7 +45,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-button {
+.butt {
   margin-top: 10px;
   height: 45px;
   width: 180px;

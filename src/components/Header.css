@@ -1,7 +1,9 @@
 nav {
+  position: relative;
     display: flex;
     justify-content: space-around;
     /* font-family: "Pacifico", cursive; */
+    padding: 2rem 0rem;
   
     .sec-1 img {
       width: 50px;
@@ -33,11 +35,41 @@ nav {
   
       div {
         font-size: 30px;
-        padding: 5px 20px;
+        padding: 5px 30px;
       }
   
       .home {
         color: #c40e61;
+      }
+
+      .loginbutheader{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 5%;
+    
+
+       
+
+        .guest{
+        padding-right: 2rem;
+          font-size: 2rem;
+          border: 2px solid;
+       
+
+        }
+
+       
+          .but{
+           background-color: #c40e61;
+           border: none;
+           color: white;
+           font-weight: 500;
+           width: 7rem;
+           border-radius: 7px;
+           
+          }
       }
     }
   }

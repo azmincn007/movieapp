@@ -26,11 +26,11 @@ function Landing() {
         <section className='section1'>
 
             <div className="sec-L">
-                <div className="contents">
+                <div className="contents1">
                     <div className='txt1'>Find movies</div>
                     <div className='txt2' >TV SHOWS AND MORE</div>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rem nam quis dolores laudantium cupiditate sunt? Ex repudiandae labore voluptatibus.</div>
-                    <div className='but'><button >  <FaPlayCircle className='play-button'/> Watch tutorial</button></div>
+                    <div className='but'><button className='butt'>  <FaPlayCircle className='play-button'/> Watch tutorial</button></div>
                         
                         
                     
@@ -65,11 +65,7 @@ function Landing() {
             
                 </>)}
         </section>
-</div>
-       
-
-
-        
+</div>     
     </div>
   )
 }

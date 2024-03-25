@@ -1,23 +1,31 @@
 // Moviedata.jsx
 import React, { useContext, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { modalcontext, moviecontext } from "../App";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { modalcontext, moviecontext, moviedatacontext } from "../App";
 import { FaStar } from "react-icons/fa";
 import "./movie.css";
 import Header from "./Header";
 import Booktickets from "./Booktickets";
+import Seatarrange from "./seat/Seatarrange";
 
 function Moviedata() {
   const { index } = useParams();
   const [poster] = useContext(moviecontext);
-  const selectedMovie = poster[index - 1];
+  const selectedMovie = poster[index-1];
   const linearGradient = "linear-gradient(90deg, #1A1A1A 24.97%, #1A1A1A 38.3%, rgba(26, 26, 26, 0.0409746) 97.47%, #1A1A1A 100%)";
-
+  const [moviedatas,setmoviedatas]=useContext(moviedatacontext)
   const [isModalOpen, setIsModalOpen] =useContext(modalcontext)
+  setmoviedatas(selectedMovie)
 
+  const navigate=useNavigate()
   const openModal = () => {
-    console.log('open');
-    setIsModalOpen(true);
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsModalOpen(true);
+    } else {
+      // Redirect to login page if token doesn't exist
+      navigate('/login')
+    }
   };
 
 
@@ -83,6 +91,8 @@ function Moviedata() {
         <div className="modal-overlay">
           
             <Booktickets />
+           
+
          
         </div>
       )}
